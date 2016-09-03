@@ -1,0 +1,227 @@
+.row div {
+
+}
+
+.gridCommon {
+	margin: 15px;
+	height: 300px;
+	background: white;
+	cursor: pointer;
+	text-align: justify
+
+}
+
+.gridHeader {
+	height: 150px;
+	background: #009688;
+	color: white;
+	text-align: center;
+
+}
+
+.menuHeader {
+	height: 50px;
+	background: #009688;
+	box-shadow: -3px 3px 10px;
+	position: fixed;
+	left: 0px; /* Расстояние от правого края окна браузера */
+	top: 0px; /* Расстояние сверху */
+	padding: 10px; /* Поля вокруг текста */
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 150%;
+}
+
+.menuImage {
+	height: 200px;
+	background: #009688;
+	position: fixed;
+	left: 0px; /* Расстояние от правого края окна браузера */
+	top: 65px; /* Расстояние сверху */
+	padding: 10px; /* Поля вокруг текста */
+	cursor: pointer;
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 150%;
+}
+
+.menuElem1 {
+	height: 50px;
+	background: #009688;
+	position: fixed;
+	left: 0px; /* Расстояние от правого края окна браузера */
+	top: 80px; /* Расстояние сверху */
+	padding: 10px; /* Поля вокруг текста */
+	cursor: pointer;
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 150%;
+}
+
+.menuElem2 {
+	height: 50px;
+	background: #009688;
+	position: fixed;
+	left: 0px; /* Расстояние от правого края окна браузера */
+	top: 145px; /* Расстояние сверху */
+	padding: 10px; /* Поля вокруг текста */
+	cursor: pointer;
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 150%;
+}
+
+.menuElem3 {
+	height: 50px;
+	background: #009688;
+	position: fixed;
+	left: 0px; /* Расстояние от правого края окна браузера */
+	top: 210px; /* Расстояние сверху */
+	padding: 10px; /* Поля вокруг текста */
+	cursor: pointer;
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 150%;
+}
+
+.menuElem4 {
+	height: 50px;
+	background: #009688;
+	position: fixed;
+	left: 0px; /* Расстояние от правого края окна браузера */
+	top: 275px; /* Расстояние сверху */
+	padding: 10px; /* Поля вокруг текста */
+	cursor: pointer;
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 150%;
+}
+
+.menuElem5 {
+	height: 50px;
+	background: #009688;
+	position: fixed;
+	left: 0px; /* Расстояние от правого края окна браузера */
+	top: 340px; /* Расстояние сверху */
+	padding: 10px; /* Поля вокруг текста */
+	cursor: pointer;
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 150%;
+}
+
+.menuElem6 {
+	height: 50px;
+	background: #009688;
+	position: fixed;
+	left: 0px; /* Расстояние от правого края окна браузера */
+	top: 405px; /* Расстояние сверху */
+	padding: 10px; /* Поля вокруг текста */
+	cursor: pointer;
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 150%;
+}
+
+.menuElem7 {
+	height: 50px;
+	background: #009688;
+	position: fixed;
+	left: 0px; /* Расстояние от правого края окна браузера */
+	top: 470px; /* Расстояние сверху */
+	padding: 10px; /* Поля вокруг текста */
+	cursor: pointer;
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 150%;
+}
+
+.menuBottom {
+	background: #009688;
+	cursor: pointer;
+	color: white;
+	margin: 0px 5px;
+	height: 50px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 150%;
+
+}
+
+.menuBottomBar {
+	background: white;
+}
+
+.center-pills {
+	display: flex;
+	justify-content: center;
+}
+
+.shadow{
+	box-shadow: 0px 2px 1px 1px rgba(0,0,0,0.25);}
+
+body {
+	background-color: #eeeeee;
+}
+
+.heartIcon{
+	font-size: 48px;
+}
+
+.heartIconActiate{
+	font-size: 48px;
+	color: darkred;
+}
+
+.userLike {
+	outline: 1px solid gray;
+}
+
+.userGet {
+	background-color: lightskyblue;
+}
+
+.glyphicon {
+	color: gray;
+}
+
+.clicked {
+	color: teal;
+}
+
+.blockClicked {
+	background-color: teal;
+}
+
+.taskGetIcons {
+	font-size: 36px;
+	cursor: pointer;
+}
+
+.taskGetIcons:hover {
+	font-size: 36px;
+	cursor: pointer;
+	color: teal;
+}
+
+
+/*Мля, навбар по-быстрому прикрутить, если ничего не выйдет*/

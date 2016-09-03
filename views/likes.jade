@@ -1,0 +1,38 @@
+extends layout.jade
+
+block content
+
+	.container.col-sm-offset-2.col-md-9.topCardsContainertop
+		.btn-group.btn-group-justified.btn-group-raised
+			a#_allApplications_.btn(href='javascript:void(0)') Понравившиеся
+				span#_allApplications_Badge.badge
+			a#_confirmed_.btn(href='javascript:void(0)') Одобренные
+				span#_confirmed_Badge.badge
+			a#_noAnswer_.btn(href='javascript:void(0)') Без ответа
+				span#_noAnswer_Badge.badge
+		.container#_allApplications_List.col-md-12
+		.container#_confirmed_List.col-md-12
+		.container#_noAnswer_List.col-md-12
+		script(type='text/javascript' src='/js/modules/badgeCounter.js').
+		script(type='text/javascript' src='/js/likes/tablist.js').
+		script(type='text/javascript' src='/js/likes/startPosition.js').
+		//script(type='text/javascript' src='/js/modules/clickLike.js').
+		script(type='text/javascript' src='/js/modules/createMonthHeaders.js').
+		script(type='text/javascript' src='/js/modules/createCardsCommon.js').
+		script(type='text/javascript' src='/js/likes/modules/createCardsCommon.js').
+		script(type='text/javascript' src='/js/likes/allApplications.js').
+		script(type = 'text/javascript' src = '/js/likes/confirmed.js').
+		script(type = 'text/javascript' src = '/js/likes/noAnswer.js').
+
+		script(type='text/javascript').
+			$.material.init();
+
+	#taskModal.modal.fade(tabindex='-1', aria-labelledby='myModalLabel', aria-hidden='true')
+		.modal-dialog
+			.modal-content
+				.modal-body
+					h2#taskNameModal
+					p#rewardModal.reward
+					p#longDescriptionModal.longDescription
+					p#deadlineModal.deadline
+				.modal-footer

@@ -1,0 +1,24 @@
+extends layout.jade
+
+block content
+	.container#CardList.panel.panel-default.col-md-6.col-sm-offset-2
+		form(method='post' action='/registration')
+			h2 Регистрация
+				fieldset
+					.form-group
+							input#firstName.form-control(name='firstName' type='text' placeholder='Имя' required)
+					.form-group
+							input#secondName.form-control(name='secondName' type='text' placeholder='Фамилия' required)
+					.form-group
+							input#thirdName.form-control(name='thirdName' type='text' placeholder='Отчество' required)
+					.form-group
+							input#userLogin.form-control(name='userLogin' type='text' placeholder='Логин' required)
+					.form-group
+							input#userPassword.form-control(name='userPassword' type='password' placeholder='Пароль' required)
+					.form-group
+							input#userInvite.form-control(name='userInvite' type='password' placeholder='Инвайт' required)
+							p.help-block Выданный идентификатор. Без него регистрация невозможна.
+					.form-group
+						button.btn.btn-primary(type='submit') Зарегестрироваться
+		script(type='text/javascript').
+			$.material.init();

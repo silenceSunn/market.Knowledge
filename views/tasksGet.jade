@@ -1,0 +1,90 @@
+extends layout-admin.jade
+
+block content
+
+	.container.col-sm-offset-2.col-md-9.topInvitesContainertop
+		.btn-group.btn-group-justified.btn-group-raised
+			a#_likesView_.btn(href='javascript:void(0)') Без ответа
+				span#_likesView_Badge.badge
+			a#_card_.btn(href='javascript:void(0)') Все задания
+				span#_card_Badge.badge
+			a#_complete_.btn(href='javascript:void(0)') Выполненные задания
+				span#_complete_Badge.badge
+		ul.lists
+			.container#_card_List.col-md-12.row
+		ul.lists
+			.container#_complete_List.col-md-12.row
+	script(type='text/javascript' src='/js/administration/modules/createMonthHeaders.js')
+	script(type='text/javascript' src='/js/administration/modules/createCardsCommon.js').
+	script(type='text/javascript' src='/js/administration/tasksGet.js').
+	script(type='text/javascript' src='/js/administration/completeTaskList.js').
+	script(type='text/javascript' src='/js/administration/likesCount.js').
+	script(type = 'text/javascript' src = '/js/administration/tablist.js').
+	script(type='text/javascript' src='/js/administration/startPosition.js').
+	script(type = 'text/javascript' src = '/js/administration/modalValidation.js').
+
+
+
+	#taskModal.modal.fade(tabindex='-1', aria-labelledby='myModalLabel', aria-hidden='true')
+		.modal-dialog
+			.modal-content
+				.modal-body
+					h2#taskNameModal
+					p#rewardModal.reward
+					p#longDescriptionModal.longDescription
+					p#deadlineModal.deadline
+				.modal-footer
+
+	#CardEditModal.modal.fade(tabindex='-1', aria-labelledby='myModalLabel', aria-hidden='true')
+		.modal-dialog
+			.modal-content
+				.modal-body
+					h2 Редактирование задания
+						form#form
+							fieldset
+								.form-group
+									label(for='cardName').control-label Название задания
+									input#CardName.form-control(name='cardName' type='text' required)
+								.form-group
+									label(for='longDescription').control-label Полное описание
+									textarea#longDescription.form-control(rows='2' name='longDescription' required)
+									p.help-block Полное описание будет отображаться в развернутой версии задания.
+								.form-group
+									label(for='shortDescription').control-label Краткое описание
+									textarea#shortDescription.form-control(rows='1' name='shortDescription' required)
+									p.help-block Краткое описание будет отображаться на превью карточки задания.
+								.form-group
+									label(for='reward').control-label Вознаграждение
+									input#reward.form-control(name='reward' type='number' required)
+									p.help-block Рубли
+
+								.form-group
+									label(for='deadline') Дедлайн
+									#datetimepicker_1.input-group.date
+										input#deadline.form-control(type='text' name='deadline' required)
+										span.input-group-addon
+											span.glyphicon.glyphicon-calendar
+									script(type='text/javascript').
+										$(function () {
+											$('#datetimepicker_1').datetimepicker({
+												format: 'MM/DD/YYYY',
+												locale: 'ru'
+											});
+										});
+								.form-group.togglebutton
+									label(for='customer') Партнер
+										input#customer.form-control(name='customer' type='checkbox')
+										span.toggle
+								.form-group.togglebutton
+									label(for='employee') Сотрудник
+										input#employee.form-control(name='employee' type='checkbox')
+										span.toggle
+
+				.modal-footer
+					button#cancelClick.btn.btn-default(type='button', data-dismiss='modal') Закрыть
+					button#applyClick.btn.btn-primary(type='button') Изменить
+					#alert.alert(hidden='true').alert-danger
+						strong Пожалуйста заполните все поля
+
+	script(type='text/javascript').
+		$.material.init();

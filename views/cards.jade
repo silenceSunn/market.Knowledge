@@ -1,0 +1,23 @@
+extends layout.jade
+
+block content
+
+	.container.col-sm-offset-2.col-md-9.topInvitesContainertop
+		ul.lists
+			.container#_card_List.col-md-12.row
+	script(type='text/javascript' src='/js/cards/modules/createMonthHeaders.js').
+	script(type='text/javascript' src='/js/cards/cardsGen.js').
+	script(type='text/javascript' src='/js/modules/fullDescriptionModal.js').
+
+	#taskModal.modal.fade(tabindex='-1', aria-labelledby='myModalLabel', aria-hidden='true')
+		.modal-dialog
+			.modal-content
+				.modal-body
+					h2#taskNameModal
+					p#rewardModal.reward
+					p#longDescriptionModal.longDescription
+					p#deadlineModal.deadline
+				.modal-footer
+
+	script(type='text/javascript').
+		$.material.init();

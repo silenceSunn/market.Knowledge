@@ -1,0 +1,20 @@
+extends layout-cut.jade
+
+block content
+	.row
+		.container.auth-cutButton.row
+			a.btn.btn-primary(href='/registration') Зарегистрироваться
+
+		.container#CardList.panel.panel-default.col-md-4.col-md-offset-4
+			form(method='post' action='/auth')
+				h2 Авторизация
+					fieldset
+						.form-group.label-floating
+							input#userLogin.form-control(name='userLogin' type='text' placeholder='Логин' required)
+						.form-group
+							input#userPassword.form-control(name='userPassword' type='password' placeholder='Пароль' required)
+						.form-group
+							button.btn.btn-primary(type='submit') Войти
+
+		script(type='text/javascript').
+			$.material.init();

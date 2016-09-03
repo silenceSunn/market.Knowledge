@@ -1,0 +1,51 @@
+extends layout-admin.jade
+
+block content
+
+	.container.col-sm-offset-2.col-md-9.topInvitesContainertop
+		.container.row
+			a#_create_.btn.btn-primary Создать инвайт
+
+		.btn-group.btn-group-justified.btn-group-raised
+			a#_employee_.btn(href='javascript:void(0)') Сотрудники
+			a#_customer_.btn(href='javascript:void(0)') Партнеры
+			a#_administrator_.btn(href='javascript:void(0)') Администраторы
+		ul.lists
+			.container#_employee_List.col-md-12.row
+		ul.lists
+			.container#_customer_List.col-md-12.row
+		ul.lists
+			.container#_administrator_List.col-md-12.row
+		script(type='text/javascript' src='/js/invites/administrator.js').
+		script(type='text/javascript' src='/js/invites/customer.js').
+		script(type='text/javascript' src='/js/invites/employee.js').
+		script(type='text/javascript' src='/js/invites/startPosition.js').
+		script(type='text/javascript' src='/js/invites/tablist.js').
+		script(type='text/javascript' src='/js/invites/createInvites.js').
+		script(type='text/javascript' src='/js/invites/modules/createCardsCommon.js').
+
+		script(type='text/javascript').
+			$.material.init();
+
+		#CreateInvite.modal.fade(tabindex='-1', aria-labelledby='myModalLabel', aria-hidden='true' data-dismiss='modal')
+			.modal-dialog
+				.modal-content
+					.modal-body
+						h2 Создание новых инвайтов
+						form#form
+							fieldset
+								.form-group
+									label(for='employee') Сотрудник
+									input#employee.form-control(name='employee' type='number' min='0' max='1000')
+									p.help-block Количество генерируемых инвайтов.
+								.form-group
+									label(for='customer') Партнер
+									input#customer.form-control(name='customer' type='number' min='0' max='1000')
+									p.help-block Количество генерируемых инвайтов.
+								.form-group
+									label(for='administrator') Администратор
+									input#administrator.form-control(name='administrator' type='number' min='0' max='1000')
+									p.help-block Количество генерируемых инвайтов.
+					.modal-footer
+						button.btn.btn-default(type='button', data-dismiss='modal') Закрыть
+						button#applyClick.btn.btn-primary(type='button', data-dismiss='modal', aria-hidden='true') Создать

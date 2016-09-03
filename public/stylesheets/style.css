@@ -1,0 +1,156 @@
+.commonMenuElem{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	font-size: 15px;
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+.commonMenuElem:hover{
+	background: rgba(153, 153, 153, 0.2);
+	transition: 0.25s;
+}
+
+.aMenuElem{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-decoration: none; /* Отменяем подчеркивание у ссылки */
+
+}
+
+.commonElem{
+
+}
+.menuContainer{
+	position: fixed;
+
+}
+.navBrand{
+	padding-left: 50px;
+	font-size: 25px;
+}
+
+.auth-cutContainer {
+}
+
+.auth-cutButton {
+	height: 100px;
+}
+.auth-regButton {
+	height: 50px;
+}
+
+.fontRoboto{
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-weight: 300;
+}
+
+.topCardsContainer{
+	top: -305px;
+}
+
+.commonCards{
+	margin: 1%;
+}
+
+.monthHeader{
+}
+
+.likeIcons {
+	transition: 0.3s;
+	font-size: 36px;
+	cursor: pointer;
+	color: grey;
+}
+
+.likeIcons:hover {
+	opacity: 0.7;
+	transition: 0.3s;
+}
+.completelikeIcons {
+	transition: 0.3s;
+	font-size: 36px;
+	cursor: pointer;
+	color: grey;
+}
+
+.completelikeIcons:hover {
+	opacity: 0.7;
+	transition: 0.3s;
+}
+
+.clicked {
+	color: teal;
+	transition: 0.3s;
+}
+
+.clickedComplete {
+	color: orangered;
+	transition: 0.3s;
+}
+
+.topInvitesContainer{
+	top: -315px;
+}
+
+.topInvitesContainertop{
+}
+
+.nonMarkers {
+	list-style-type: none; /* Убираем маркеры */
+}
+
+.glyphicon-calendar{
+	transition: 0.3s;
+	font-size: 25px;
+}
+
+.glyphicon-calendar:hover{
+	color: teal;
+	transition: 0.3s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+.datetimepicker{
+	color: teal;
+}
+
+.deadline{
+	color: steelblue;
+	font-size: 18px;
+}
+
+.reward{
+	color: steelblue;
+	font-size: 24px;
+}
+
+.lists{
+	list-style-type: none;
+}
+
+.tasksGetName{
+	font-size: 18px;
+}
+
+.cardCursor{
+	cursor: pointer;
+}
+
+.modalHeader{
+	color: white;
+	background-color: teal;
+}
+
+.defaultNavbar{
+	cursor: pointer;
+}

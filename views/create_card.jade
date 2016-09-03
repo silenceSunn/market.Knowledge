@@ -1,0 +1,51 @@
+extends layout-admin.jade
+
+block content
+	.container#CardList.col-md-6.panel.panel-default.col-sm-offset-3
+		form(method='post' action='/create_card')
+			h2 Создание задания
+			fieldset
+				.form-group.label-floating
+					label(for='cardName').control-label Название задания
+					input#cardName.form-control(name='cardName' type='text' required)
+				.form-group.label-floating
+					label(for='longDescription').control-label Полное описание
+					textarea#longDescription.form-control(rows='2' name='longDescription' required)
+					p.help-block Полное описание будет отображаться в развернутой версии задания.
+				.form-group.label-floating
+					label(for='shortDescription').control-label Краткое описание
+					textarea#shortDescription.form-control(rows='1' name='shortDescription' required)
+					p.help-block Краткое описание будет отображаться на превью карточки задания.
+				.form-group.label-floating
+					label(for='reward').control-label Вознаграждение
+					input#reward.form-control(name='reward' type='number' required)
+					p.help-block Рубли
+
+				.form-group
+					label(for='deadline') Дедлайн
+					#datetimepicker_1.input-group.date
+						input#deadline.form-control(type='text' name='deadline' required)
+						span.input-group-addon
+							span.glyphicon.glyphicon-calendar
+					script(type='text/javascript').
+						$(function () {
+							$('#datetimepicker_1').datetimepicker({
+								format: 'MM/DD/YYYY',
+								locale: 'ru'
+							});
+						});
+				.form-group.togglebutton
+					label(for='customer') Партнер
+						input#customer.form-control(name='customer' type='checkbox')
+						span.toggle
+				.form-group.togglebutton
+					label(for='employee') Сотрудник
+						input#employee.form-control(name='employee' type='checkbox')
+						span.toggle
+
+				.form-group
+					button.btn.btn-primary.btn-raised.withripple(type='submit') Создать
+
+
+	script(type='text/javascript').
+		$.material.init();
