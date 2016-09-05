@@ -56,7 +56,6 @@ router.route('/registration')
 						console.log('something is getting wrong...')
 					}
 				});
-			//});
 		}
 		else {
 			console.log('please, check the form');
