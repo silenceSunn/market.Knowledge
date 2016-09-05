@@ -71,7 +71,7 @@ Jade
 - [connect-mongo] (https://github.com/jdesboeufs/connect-mongo)
 - [express-session] (https://github.com/expressjs/session)
 - [cookie-parser] (https://github.com/expressjs/cookie-parser)
-- [body-parser] https://github.com/expressjs/body-parser
+- [body-parser] (https://github.com/expressjs/body-parser)
 
 **Фронтенд фреймворки**
 - [bootstrap (3.3.6)] (https://github.com/twbs/bootstrap)
