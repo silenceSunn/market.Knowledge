@@ -97,9 +97,9 @@ Jade
 * Для запуска достаточно запустить .bat  
 
 #### Второй способ.  
-* В папке СУБД mongoDB создать mongodb.config c прописанным путем до bd в проекте, **например**   'dbpath=E:\MarketOfKnowledgeFinal/MK_server/db'  
+* В папке СУБД mongoDB создать mongodb.config c прописанным путем до bd в проекте, **например**   `dbpath=E:\MarketOfKnowledgeFinal/MK_server/db`  
 * Запуск в папке СУБД mongoDB  
-'mongod.exe --config mongodb.config'  
-'(mongo.exe)'  
+`mongod.exe --config mongodb.config`  
+`(mongo.exe)`  
 * Затем запуск market.Knowledge  
-'node index.js'  
+`node index.js`  
