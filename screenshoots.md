@@ -11,3 +11,5 @@
 ##Создание новых заданий
 ![createTask](https://github.com/silenceSunn/market.Knowledge/blob/master/screenshots/createTask.PNG)
 ![tasksMonth2](https://github.com/silenceSunn/market.Knowledge/blob/master/screenshots/tasksMonth2.PNG)
+##Страница взятых заданий
+![customer](https://github.com/silenceSunn/market.Knowledge/blob/master/screenshots/customer2.PNG)
