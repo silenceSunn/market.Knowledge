@@ -100,6 +100,6 @@ Jade
 * В папке СУБД mongoDB создать mongodb.config c прописанным путем до bd в проекте, **например**   `dbpath=E:\MarketOfKnowledgeFinal/MK_server/db`  
 * Запуск в папке СУБД mongoDB  
 `mongod.exe --config mongodb.config`  
-`(mongo.exe)`  
+( `mongo.exe` )  
 * Затем запуск market.Knowledge  
 `node index.js`  
