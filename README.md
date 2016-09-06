@@ -93,7 +93,7 @@ Jade
 **Для запуска проекта должна быть установлена Node.js**
 
 #### Первый способ (только для win).
-* [Готовый к запуску проект пожно скачать отсюда.] (https://drive.google.com/open?id=0B54vyW8OQxAeNzBtQnRZMXJ1SFU)
+* [Готовый к запуску проект можно скачать отсюда.] (https://drive.google.com/open?id=0B54vyW8OQxAeNzBtQnRZMXJ1SFU)
 * Для запуска достаточно запустить .bat  
 
 #### Второй способ.  
