@@ -89,15 +89,15 @@ Jade
 
 *БД данного проекта уже заполнена в качестве демонстрации. При желании ее можно очистить.*
 
-##Запуск
+##Запуск  
 **Для запуска проекта должна быть установлена Node.js**
 ####Первый способ (только для win).
-* [Готовый к запуску проект пожно скачать отсюда.] ((https://drive.google.com/open?id=0B54vyW8OQxAeNzBtQnRZMXJ1SFU)
-* Для запуска достаточно запустить .bat
-####Второй способ.
+* [Готовый к запуску проект пожно скачать отсюда.] (https://drive.google.com/open?id=0B54vyW8OQxAeNzBtQnRZMXJ1SFU)
+* Для запуска достаточно запустить .bat  
+####Второй способ.  
 * В папке СУБД mongoDB создать mongodb.config c прописанным путем до bd в проекте, **например**   'dbpath=E:\MarketOfKnowledgeFinal/MK_server/db'  
 * Запуск в папке СУБД mongoDB  
-'mongod.exe --config mongodb.config'
+'mongod.exe --config mongodb.config'  
 '(mongo.exe)'  
-* Затем запуск market.Knowledge
+* Затем запуск market.Knowledge  
 'node index.js'  
