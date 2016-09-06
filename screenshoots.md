@@ -1,4 +1,4 @@
-#Скриншоты
+#Некоторые скриншоты
 ##Меню входа.
 ![Auth](https://github.com/silenceSunn/market.Knowledge/blob/master/screenshots/main.PNG)
 ##Страница заданий.
